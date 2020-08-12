@@ -30,7 +30,7 @@
 
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-<link rel="stylesheet" type="text/css" href="https://sufcindia.com/blogs/wp-content/themes/salinger/css/style.css" />
+<link rel="stylesheet" type="text/css" href="https://sufcindia.com/blogs/wp-content/themes/salinger/css/footer/style.css" />
 <link rel="stylesheet" type="text/css" href="https://sufcindia.com/blogs/wp-content/themes/salinger/css/footer/bootstrap.css" />
 
 <?php wp_head(); ?>
@@ -50,7 +50,7 @@
 
 
 	<header id="masthead" class="site-header" role="banner">
-
+		<p> Hello </p>
 		<?php
 
 		if ( get_theme_mod( 'salinger_display_top_bar', 1 ) == 1 ) {
@@ -78,13 +78,11 @@
 			<div class="header-inner-wrap">
 
 				<div class="site-branding-wrapper">
-
 					<?php
 
 					if ( has_custom_logo() ) {
 
 						the_custom_logo();
-
 					}
 
 
@@ -119,25 +117,60 @@
 
 				</div><!-- .site-branding-wrapper -->
 
+				<div class="navbar navbar-main navbar-fixed-top">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+						<div class="info">
+							<!-- <h3><a href="news.html" title="" target="_new">News:</a> </h3> -->
+							<div class="info-item">
+                 <!-- <div><a href="ten-man-bfc-b-edge-south-united-fc.html" target="_new">Ten Man BFC B Edge South United FC</a></div> 
+								<div><a href="SUFC-partners-with-tiki-taka.html" target="_new">SUFC Partners with Tiki Taka</a></div>-->
+								<!-- <div><a href="https://sufcindia.com/blogs/south-united-back-in-i-league-2-div" target="_new">South United Back in I League-2 DIV</a></div> -->
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+						<div class="top-sosmed pull-right">
+							<a href="https://www.facebook.com/sufcindia" title="" target="_new"><span class="fa fa-facebook"></span></a>
+							<a href="https://twitter.com/sufcindia" title="" target="_new"><span class="fa fa-twitter"></span></a>
+							<a href="https://www.instagram.com/southunited" title="" target="_new"><span class="fa fa-instagram"></span></a>
+							<!-- <span class="fa fa-shopping-cart"></span> -->
+							<a href="/blogs/category/news/" title="" target="_new"><span class="fa fa-file-text"></span></a>
+						</div>
+					</div>
 
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="https://sufcindia.com/blogs/wp-content/themes/salinger/css/footer/logo.png" alt="" /></a>
 
-				<div class="main-navigation-wrapper">
+			</div>
+			<nav class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="http://sufcindia.com/index.html">HOME</a></li>
+					<li ><a href="http://sufcindia.com/about.html">ABOUT</a></li>
+					<li><a href="http://sufcindia.com/sports-schools.html">SPORTS SCHOOLS</a></li>
+					<li><a href="http://sufcindia.com/eco-system.html">ECOSYSTEM</a></li>
+					<li><a href="http://sufcindia.com/the-team.html">THE TEAM</a></li>
+					<li><a href="http://sufcindia.com/gallery.html">GALLERY</a></li>
+                    <li><a href="http://sufcindia.com/clients.html">CLIENTS</a></li>
+                    <li class="active"><a href="https://sufcindia.com/blogs/">BLOGS</a></li>
+					<li><a href="http://sufcindia.com/contact.html">CONTACT</a></li>
+				</ul>
+			</nav>
+		</div>
+    </div>
 
-					<nav id="site-navigation" class="main-navigation" role="navigation">
-
-					<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'salinger' ); ?>"><?php esc_html_e( 'Skip to content', 'salinger' ); ?></a>
-
-					<?php
-
-					wp_nav_menu( array(
-
-						'theme_location' => 'primary',
-
-						'menu_class'     => 'nav-menu',
-
-					) );
-
-					?>
+				
 
 					</nav><!-- #site-navigation -->
 
@@ -150,7 +183,7 @@
 		</div><!-- .inner-wrap -->
 
 
-
+		<p>Hello </p>
 		<?php
 
 		if ( get_header_image() ) {
